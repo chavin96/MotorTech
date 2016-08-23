@@ -1,0 +1,20 @@
+.button {
+    -fx-background-color:  	#F5F5F5;
+    -fx-color: white;
+    -fx-padding: 15px 32px;
+    -fx-font-size: 16px;
+    -fx-cursor: pointer;
+}
+.pane{
+	 -fx-background-color: #4CAF50;
+}
+.label{
+	 -fx-color: white;
+    -fx-padding: 15px 32px;
+    -fx-font-size: 36px;
+}
+.Invoicelabel{
+	-fx-color: white;
+    -fx-padding: 5px 5px;
+    -fx-font-size: 14px;
+}
