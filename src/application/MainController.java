@@ -3,13 +3,11 @@ package application;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.geometry.Rectangle2D;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Modality;
-import javafx.stage.Screen;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
@@ -27,22 +25,42 @@ public class MainController {
 	public void login(ActionEvent event) throws Exception {
 		if (txt_Username.getText().equals("") && txt_Password.getText().equals("")) {
 			try {
-				Parent root = FXMLLoader.load(getClass().getResource("Form.fxml"));
+				Parent root = FXMLLoader.load(getClass().getResource("Menu.fxml"));
 				Stage stage = new Stage();
-	            stage.initModality(Modality.APPLICATION_MODAL);
-	            stage.initStyle(StageStyle.UNDECORATED);
-				stage.setTitle("ABC");
-				Rectangle2D primScreenBounds = Screen.getPrimary().getVisualBounds();
+				stage.initModality(Modality.APPLICATION_MODAL);
+				stage.initStyle(StageStyle.UTILITY);
+				stage.setTitle("Welcome back!");
 				stage.setMaximized(true);
-	            stage.setScene(new Scene(root));  
-	            stage.show();
-	            
-	            Main.primaryStage.hide();
+				stage.setScene(new Scene(root));
+				stage.show();
+
+				Main.primaryStage.hide();
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
 		} else {
 			lbl_Status.setText("Login Failed!");
+		}
+
+	}
+
+	public void exit(ActionEvent event) throws Exception {
+		System.exit(0);
+	}
+	public void newCustomer(ActionEvent event) throws Exception {
+		try {
+			Parent root = FXMLLoader.load(getClass().getResource("RegistrationForm.fxml"));
+			Stage stage = new Stage();
+			stage.initModality(Modality.APPLICATION_MODAL);
+			stage.initStyle(StageStyle.UTILITY);
+			stage.setTitle("Welcome back!");
+			stage.setMaximized(true);
+			stage.setScene(new Scene(root));
+			stage.show();
+
+			Main.primaryStage.hide();
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
 
 	}
