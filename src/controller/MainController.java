@@ -1,4 +1,4 @@
-package application;
+package controller;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -25,7 +25,7 @@ public class MainController {
 	public void login(ActionEvent event) throws Exception {
 		if (txt_Username.getText().equals("") && txt_Password.getText().equals("")) {
 			try {
-				Parent root = FXMLLoader.load(getClass().getResource("Menu.fxml"));
+				Parent root = FXMLLoader.load(getClass().getResource("/view/Menu.fxml"));
 				Stage stage = new Stage();
 				stage.initModality(Modality.APPLICATION_MODAL);
 				stage.initStyle(StageStyle.UTILITY);
@@ -49,7 +49,7 @@ public class MainController {
 	}
 	public void newCustomer(ActionEvent event) throws Exception {
 		try {
-			Parent root = FXMLLoader.load(getClass().getResource("RegistrationForm.fxml"));
+			Parent root = FXMLLoader.load(getClass().getResource("/view/RegistrationForm.fxml"));
 			Stage stage = new Stage();
 			stage.initModality(Modality.APPLICATION_MODAL);
 			stage.initStyle(StageStyle.UTILITY);

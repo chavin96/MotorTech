@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1920.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane layoutX="-124.0" layoutY="-145.0" prefHeight="200.0" prefWidth="200.0" />
+      <ImageView fitHeight="80.0" fitWidth="350.0" layoutX="34.0" layoutY="27.0">
+         <image>
+            <Image url="@../../resources/company-logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="42.0" layoutY="137.0" prefHeight="51.0" prefWidth="136.0" text="Repair Order">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <TreeTableView accessibleRole="LIST_VIEW" editable="true" layoutX="42.0" layoutY="223.0" prefHeight="200.0" prefWidth="332.0">
+        <columns>
+          <TreeTableColumn prefWidth="118.0" text="Customer Name" />
+        </columns>
+      </TreeTableView>
+   </children>
+</AnchorPane>

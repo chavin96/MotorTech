@@ -1,4 +1,4 @@
-package application;
+package controller;
 
 import database.DatabaseManager;
 import javafx.event.ActionEvent;

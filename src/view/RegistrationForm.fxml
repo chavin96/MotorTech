@@ -2,6 +2,7 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollBar?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -9,7 +10,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="769.0" prefWidth="713.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CustomerRegistrationController">
+<AnchorPane prefHeight="769.0" prefWidth="713.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerRegistrationController">
 	<children>
 		<Label layoutX="31.0" layoutY="142.0" text="Customer Name" textOverrun="CLIP">
 			<font>
@@ -146,10 +147,11 @@
          <font>
             <Font size="14.0" />
          </font></TextField>
-		<Button layoutX="582.0" layoutY="697.0" mnemonicParsing="false" onAction="#insertCustomerData" style="-fx-border-color: Black;" stylesheets="@application.css" text="Submit">
+		<Button layoutX="562.0" layoutY="685.0" mnemonicParsing="false" onAction="#insertCustomerData" style="-fx-border-color: Black;" stylesheets="@application.css" text="Submit">
 			<font>
 				<Font size="18.0" />
 			</font>
 		</Button>
+      <ScrollBar layoutX="692.0" layoutY="6.0" orientation="VERTICAL" prefHeight="762.0" prefWidth="14.0" />
 	</children>
 </AnchorPane>
